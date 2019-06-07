@@ -1,0 +1,12 @@
+<form (ngSubmit)="onSubmit()" autocomplete="off" #RSSForm="ngForm"> 
+  <div class="form-group">
+    <label for="Title">Title For Feed</label>
+    <input type="text" name="Title" class="form-control" id="Title" [(ngModel)]="data.name" trim/>
+  </div>
+  <div class="form-group">
+    <label for="url">URL:</label>
+    <input type="text" name="URL" class="form-control" id="url" [(ngModel)]="data.url" trim/>
+  </div>
+  
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>

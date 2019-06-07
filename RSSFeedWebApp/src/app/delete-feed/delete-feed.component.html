@@ -1,0 +1,8 @@
+<div class="dropdown marginPadding" *ngIf="RSSFeedCollection && RSSFeedCollection.length>0">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Select Feed To Fetch Data
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu" >
+    <li style="width: 200px;cursor: pointer;text-align: center" *ngFor="let Feed of RSSFeedCollection" (click)="deleteFeed(Feed)">{{Feed.name}}</li>
+
+  </ul>
+</div>
